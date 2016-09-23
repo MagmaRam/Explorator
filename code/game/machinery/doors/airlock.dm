@@ -233,6 +233,16 @@
 	assembly_type = /obj/structure/door_assembly/door_assembly_atmo
 	glass = 1
 
+/obj/machinery/door/airlock/glass_gray
+	name = "Maintenance Hatch"
+	icon = 'icons/obj/doors/Doorglassnew.dmi'
+	hitsound = 'sound/effects/Glasshit.ogg'
+	maxhealth = 300
+	explosion_resistance = 5
+	opacity = 0
+	assembly_type = /obj/structure/door_assembly/door_assembly_atmo
+	glass = 1
+
 /obj/machinery/door/airlock/gold
 	name = "Gold Airlock"
 	icon = 'icons/obj/doors/Doorgold.dmi'

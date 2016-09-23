@@ -71,6 +71,12 @@
 	glass_type = "/glass_medical"
 	airlock_type = "/medical"
 
+/obj/structure/door_assembly/door_assembly_gray
+	base_icon_state = "gray"
+	base_name = "glass airlock"
+	glass_type = "/glass_gray"
+	airlock_type = "/glass_gray"
+
 /obj/structure/door_assembly/door_assembly_mai
 	base_icon_state = "mai"
 	base_name = "Maintenance airlock"
