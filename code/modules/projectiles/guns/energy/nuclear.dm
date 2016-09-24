@@ -16,6 +16,17 @@
 		list(mode_name="lethal", projectile_type=/obj/item/projectile/beam, modifystate="energykill", fire_sound='sound/weapons/Laser.ogg'),
 		)
 
+/obj/item/weapon/gun/energy/gun/old
+	desc = "The W-T-10 is a straight upgrade on the W-T-5, featuring the same form with an added lethal capbility."
+	icon_state = "coolenergystun100" //it's just a resprite
+
+	modifystate = "coolenergystun" //respriting energy guns is a PITA though
+
+	firemodes = list( //if this isn't necessary feel free to do it more efficiently
+		list(mode_name="stun", projectile_type=/obj/item/projectile/beam/stun/weak, modifystate="coolenergystun", fire_sound='sound/weapons/Taser.ogg'),
+		list(mode_name="lethal", projectile_type=/obj/item/projectile/beam, modifystate="coolenergykill", fire_sound='sound/weapons/Laser.ogg'),
+		)
+
 /obj/item/weapon/gun/energy/gun/mounted
 	name = "mounted energy gun"
 	self_recharge = 1

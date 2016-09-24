@@ -7,6 +7,11 @@
 	max_shots = 10
 	projectile_type = /obj/item/projectile/beam/stun
 
+/obj/item/weapon/gun/energy/taser/old
+	name = "taser gun"
+	desc = "The W-T-5 is a non-lethal sidearm. Its durability and reliability makes it popular in isolated parts of space."
+	icon_state = "taserold"
+
 /obj/item/weapon/gun/energy/taser/mounted
 	name = "mounted taser gun"
 	self_recharge = 1
