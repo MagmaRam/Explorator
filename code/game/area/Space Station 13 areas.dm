@@ -251,6 +251,32 @@ area/space/atmosalert()
 /area/shuttle/escape_pod6/transit
 	icon_state = "shuttle"
 
+/area/shuttle/escape_pod7
+	name = "\improper Escape Pod Seven"
+	music = "music/escape.ogg"
+
+/area/shuttle/escape_pod7/station
+	icon_state = "shuttle2"
+
+/area/shuttle/escape_pod7/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod7/transit
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod8
+	name = "\improper Escape Pod Eight"
+	music = "music/escape.ogg"
+
+/area/shuttle/escape_pod8/station
+	icon_state = "shuttle2"
+
+/area/shuttle/escape_pod8/centcom
+	icon_state = "shuttle"
+
+/area/shuttle/escape_pod8/transit
+	icon_state = "shuttle"
+
 /area/shuttle/large_escape_pod1
 	name = "\improper Large Escape Pod One"
 	music = "music/escape.ogg"
@@ -1881,6 +1907,10 @@ area/space/atmosalert()
 /area/medical/first_aid_station
 	name = "\improper Port First-Aid Station"
 	icon_state = "medbay2"
+
+/area/medical/medbay_fore
+	name = "\improper Forward Medbay"
+	icon_state = "medbay"
 
 
 
