@@ -4,7 +4,7 @@
 	icon_state = "shotgun"
 	item_state = "shotgun"
 	max_shells = 4
-	w_class = ITEMSIZE_LARGE
+	w_class = ITEMSIZE_HUGE //changed for Explorator
 	force = 10
 	flags =  CONDUCT
 	slot_flags = SLOT_BACK
@@ -40,6 +40,9 @@
 		chambered = AC
 
 	update_icon()
+
+/obj/item/weapon/gun/projectile/shotgun/pump/slugs_loaded
+	ammo_type = /obj/item/ammo_casing/shotgun
 
 /obj/item/weapon/gun/projectile/shotgun/pump/combat
 	name = "combat shotgun"

@@ -148,7 +148,7 @@
 
 /obj/item/projectile/bullet/shotgun
 	name = "slug"
-	damage = 50
+	damage = 40
 	armor_penetration = 15
 
 /obj/item/projectile/bullet/shotgun/beanbag		//because beanbags are not bullets
@@ -160,32 +160,34 @@
 	check_armour = "melee"
 
 //Should do about 80 damage at 1 tile distance (adjacent), and 50 damage at 3 tiles distance.
+//make that 65ish damage
 //Overall less damage than slugs in exchange for more damage at very close range and more embedding
 /obj/item/projectile/bullet/pellet/shotgun
 	name = "shrapnel"
-	damage = 13
+	damage = 10
 	pellets = 6
 	range_step = 1
 	spread_step = 10
 
 /* "Rifle" rounds */
+//EXPLORATOR REBALANCE: 7.62 is full-sized, 5.56 is intermediate, 14.5 is anti-materiel, damage is done accordingly
 
 /obj/item/projectile/bullet/rifle
 	armor_penetration = 15
 	penetrating = 1
 
 /obj/item/projectile/bullet/rifle/a762
-	damage = 25
+	damage = 45
 
 /obj/item/projectile/bullet/rifle/a762/ap
-	damage = 20
+	damage = 40
 	armor_penetration = 50 // At 40 or more armor, this will do more damage than standard rounds.
 
 /obj/item/projectile/bullet/rifle/a556
-	damage = 35
+	damage = 30
 
 /obj/item/projectile/bullet/rifle/a556/ap
-	damage = 30
+	damage = 25
 	armor_penetration = 50 // At 30 or more armor, this will do more damage than standard rounds.
 
 /obj/item/projectile/bullet/rifle/a145

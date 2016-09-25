@@ -238,6 +238,27 @@
 	else
 		icon_state = "pistol"
 
+/obj/item/weapon/gun/projectile/pistol9mm
+	name = "9mm pistol"
+	desc = "A small, rugged 9mm pistol."
+	icon_state = "usp"
+	item_state = null
+	w_class = ITEMSIZE_SMALL
+	caliber = "9mm"
+	silenced = 0
+	origin_tech = list(TECH_COMBAT = 2, TECH_MATERIAL = 2, TECH_ILLEGAL = 2)
+	fire_sound = 'sound/weapons/semiauto.ogg'
+	load_method = MAGAZINE
+	magazine_type = /obj/item/ammo_magazine/mc9mm
+	allowed_magazines = list(/obj/item/ammo_magazine/mc9mm)
+
+/obj/item/weapon/gun/projectile/pistol9mm/update_icon()
+	..()
+	if(ammo_magazine)
+		icon_state = "usp"
+	else
+		icon_state = "usp-e"
+
 /obj/item/weapon/silencer
 	name = "silencer"
 	desc = "a silencer"

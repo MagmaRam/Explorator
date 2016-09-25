@@ -348,7 +348,7 @@
 	desc = "The bullpup configured GP3000 is a lightweight, compact, military-grade assault rifle produced by Gurov Projectile Weapons LLC. It is sold almost exclusively to standing armies. The serial number on this one has been scratched off. Uses 5.56mm rounds."
 	icon_state = "bullpupm"
 	item_state = "bullpup"
-	w_class = ITEMSIZE_LARGE
+	w_class = ITEMSIZE_HUGE //changed for explorator
 	force = 10
 	caliber = "a556"
 	origin_tech = list(TECH_COMBAT = 6, TECH_MATERIAL = 1, TECH_ILLEGAL = 4)
@@ -372,3 +372,12 @@
 		icon_state = (ammo_magazine)? "bullpup" : "bullpup-empty"
 	item_state = (ammo_magazine)? "bullpup" : "bullpup-empty"
 	if(!ignore_inhands) update_held_icon()
+
+/obj/item/weapon/gun/projectile/automatic/carbine/semi
+	name = "semi-automatic carbine"
+	desc = "The GP3500 is the civilian variant of the GP3000, a version of the rifle designed only for semi-automatic fire."
+	magazine_type = /obj/item/ammo_magazine/a556
+
+	firemodes = list(
+		list(mode_name="semiauto",       burst=1, fire_delay=0,    move_delay=null, burst_accuracy=null, dispersion=null)
+		)
