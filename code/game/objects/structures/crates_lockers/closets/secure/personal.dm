@@ -60,6 +60,60 @@
 		new /obj/item/device/radio/headset( src )
 	return
 
+//begin explorator closets
+/obj/structure/closet/secure_closet/personal/captain
+	name = "captain's locker"
+	icon_state = "capsecure1"
+	icon_closed = "capsecure"
+	icon_locked = "capsecure1"
+	icon_opened = "capsecureopen"
+	icon_broken = "capsecurebroken"
+	icon_off = "capsecureoff"
+
+	New()
+		..()
+		new /obj/item/weapon/storage/backpack/dufflebag/captain(src)
+		new /obj/item/clothing/head/helmet(src)
+		new /obj/item/clothing/suit/storage/vest(src)
+		new /obj/item/clothing/suit/captunic/capjacket(src)
+		new /obj/item/clothing/under/captainformal(src)
+		new /obj/item/clothing/under/rank/captain(src)
+		new /obj/item/clothing/accessory/holster/hip(src)
+		new /obj/item/clothing/glasses/sunglasses(src)
+		new /obj/item/clothing/gloves/captain(src)
+		new /obj/item/clothing/gloves/combat(src)
+		new /obj/item/clothing/head/caphat/formal(src)
+		new /obj/item/clothing/head/caphat/cap(src)
+		new /obj/item/clothing/mask/gas(src)
+		new /obj/item/clothing/shoes/brown(src)
+		new /obj/item/clothing/shoes/jackboots(src)
+		new /obj/item/weapon/cartridge/captain(src)
+		new /obj/item/weapon/storage/lockbox/medal(src)
+		new /obj/item/weapon/gun/projectile/revolver/deckard(src)
+		new /obj/item/weapon/melee/telebaton(src)
+		new /obj/item/device/flash(src)
+		return
+
+
+/obj/structure/closet/secure_closet/personal/xo
+
+/obj/structure/closet/secure_closet/personal/ce
+
+/obj/structure/closet/secure_closet/personal/cmo
+
+/obj/structure/closet/secure_closet/personal/cs
+
+/obj/structure/closet/secure_closet/personal/pilot
+
+/obj/structure/closet/secure_closet/personal/medic
+
+/obj/structure/closet/secure_closet/personal/engi
+
+/obj/structure/closet/secure_closet/personal/sci
+
+/obj/structure/closet/secure_closet/personal/crew
+//end explorator closets
+
 /obj/structure/closet/secure_closet/personal/attackby(obj/item/weapon/W as obj, mob/user as mob)
 	if (src.opened)
 		if (istype(W, /obj/item/weapon/grab))
