@@ -130,7 +130,12 @@
 
 /obj/item/weapon/storage/box/blanks/New()
 	..()
-	for(var/i = 1 to 7)
+	for(var/i = 1 to 8)
+		new /obj/item/ammo_casing/shotgun/blank(src)
+
+/obj/item/weapon/storage/box/blanks/large/New()
+	..()
+	for(var/i = 1 to 8)
 		new /obj/item/ammo_casing/shotgun/blank(src)
 
 /obj/item/weapon/storage/box/beanbags
@@ -141,7 +146,12 @@
 
 /obj/item/weapon/storage/box/beanbags/New()
 	..()
-	for(var/i = 1 to 7)
+	for(var/i = 1 to 8)
+		new /obj/item/ammo_casing/shotgun/beanbag(src)
+
+/obj/item/weapon/storage/box/beanbags/large/New()
+	..()
+	for(var/i = 1 to 8)
 		new /obj/item/ammo_casing/shotgun/beanbag(src)
 
 /obj/item/weapon/storage/box/shotgunammo
@@ -152,7 +162,12 @@
 
 /obj/item/weapon/storage/box/shotgunammo/New()
 	..()
-	for(var/i = 1 to 7)
+	for(var/i = 1 to 8)
+		new /obj/item/ammo_casing/shotgun(src)
+
+/obj/item/weapon/storage/box/shotgunammo/large/New()
+	..()
+	for(var/i = 1 to 8)
 		new /obj/item/ammo_casing/shotgun(src)
 
 /obj/item/weapon/storage/box/shotgunshells
@@ -163,7 +178,12 @@
 
 /obj/item/weapon/storage/box/shotgunshells/New()
 	..()
-	for(var/i = 1 to 7)
+	for(var/i = 1 to 8)
+		new /obj/item/ammo_casing/shotgun/pellet(src)
+
+/obj/item/weapon/storage/box/shotgunshells/large/New()
+	..()
+	for(var/i = 1 to 8)
 		new /obj/item/ammo_casing/shotgun/pellet(src)
 
 /obj/item/weapon/storage/box/flashshells
@@ -174,7 +194,12 @@
 
 /obj/item/weapon/storage/box/flashshells/New()
 	..()
-	for(var/i = 1 to 7)
+	for(var/i = 1 to 8)
+		new /obj/item/ammo_casing/shotgun/flash(src)
+
+/obj/item/weapon/storage/box/flashshells/large/New()
+	..()
+	for(var/i = 1 to 8)
 		new /obj/item/ammo_casing/shotgun/flash(src)
 
 /obj/item/weapon/storage/box/stunshells
@@ -185,7 +210,12 @@
 
 /obj/item/weapon/storage/box/stunshells/New()
 	..()
-	for(var/i = 1 to 7)
+	for(var/i = 1 to 8)
+		new /obj/item/ammo_casing/shotgun/stunshell(src)
+
+/obj/item/weapon/storage/box/stunshells/large/New()
+	..()
+	for(var/i = 1 to 8)
 		new /obj/item/ammo_casing/shotgun/stunshell(src)
 
 /obj/item/weapon/storage/box/practiceshells
@@ -196,8 +226,29 @@
 
 /obj/item/weapon/storage/box/practiceshells/New()
 	..()
-	for(var/i = 1 to 7)
+	for(var/i = 1 to 8)
 		new /obj/item/ammo_casing/shotgun/practice(src)
+
+/obj/item/weapon/storage/box/practiceshells/large/New()
+	..()
+	for(var/i = 1 to 8)
+		new /obj/item/ammo_casing/shotgun/practice(src)
+
+/obj/item/weapon/storage/box/empshells
+	name = "box of emp shells"
+	desc = "It has a picture of a gun and several warning symbols on the front."
+	icon_state = "empshot_box"
+	item_state_slots = list(slot_r_hand_str = "syringe_kit", slot_l_hand_str = "syringe_kit")
+
+/obj/item/weapon/storage/box/empshells/New()
+	..()
+	for(var/i = 1 to 8)
+		new /obj/item/ammo_casing/shotgun/emp(src)
+
+/obj/item/weapon/storage/box/empshells/large/New()
+	..()
+	for(var/i = 1 to 8)
+		new /obj/item/ammo_casing/shotgun/emp(src)
 
 /obj/item/weapon/storage/box/sniperammo
 	name = "box of 14.5mm shells"
