@@ -620,3 +620,12 @@
 	desc = "No honest man would wear this abomination"
 	icon_state = "mankini"
 	siemens_coefficient = 1
+
+/*
+ * explorator clothing
+ */
+/obj/item/clothing/under/pilot
+	name = "pilot's jumpsuit"
+	desc = "A classic pilot's jumpsuit."
+	icon_state = "xwing"
+	armor = list(melee = 0, bullet = 0, laser = 10,energy = 10, bomb = 0, bio = 0, rad = 30)
